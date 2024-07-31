@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    color: #40196D;
+    padding: 16px 64px;
+    box-shadow: 0rem .3125rem .3125rem -0.3125rem rgba(228, 227, 227, 0.836);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* max-width: 75rem;
+    margin: 0 auto; */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+
+}
+
+.nav-left .logo a,
+.nav-right .logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 1.25rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 1.25rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: .3125rem;
+    font-size: 0.8em;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 8px 0;
+    list-style: none;
+    min-width: 9.375rem;
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown a {
+    padding: 8px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background: #555;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sign-in {
+    text-decoration: none;
+    margin-right: 1.25rem;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: #40196D;
+    border: none;
+    color: #fff;
+    font: 16px;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section-one {
+    width: 80%;
+    margin: 2rem auto;
+    /* border: 2px solid green; */
+}
+
+.money-app-section {
+    display: flex;
+}
+
+.money-app {
+    padding-top: 150px;
+    width: 50%;
+}
+
+.money-app-content {
+    width: 70%;
+    /* border: 2px solid red; */
+}
+
+.money-app-content h1 {
+    color: #40196D;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.money-app-content p {
+    margin: 1.7rem 0;
+    font-size: 1.2rem;
+
+}
+
+.app-store {
+    display: flex;
+    gap: .75rem;
+}
+
+.info-section {
+    margin-top: 1rem;
+}
+
+.info-section,
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.info-content img {
+    /* width: 30px; */
+}
+
+.kuda-card {
+    width: 50%;
+}
+
+/*
+///////////////CARDS SECTION/////////////////////
+*/
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875rem;
+
+}
+
+.card {
+
+    box-shadow: .5rem .5rem .3125rem -0.3125rem rgba(228, 227, 227, 0.836);
+    padding: 1.25rem .625rem;
+    color: #40196D;
+    font-weight: 600;
+}
+
+.card img {
+    margin-bottom: 1rem;
+}
+
+.cards2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    /* border: 2px solid red; */
+    margin: 50px auto;
+}
+
+/* 
+////////////////OPEN ACCOUNT/////////////
+ */
+
+.open-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+
+}
+
+.left-section {
+    width: 35%;
+    /* border: 2px solid red; */
+
+}
+
+.left-section h3 {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #40196D;
+}
+
+.left-section p {
+    margin: 1rem 0;
+
+}
+
+.left-section a {
+    font-size: .9rem;
+    color: #40196D;
+
+}
+
+.right-section img {
+    padding-right: 5rem;
+}
+
+/* Responsive Design 
+@media (max-width: 48rem) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-left,
+    .nav-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: .625rem 0;
+    }
+
+    .nav-right {
+        margin-top: .625rem;
+    }
+}
+    */
